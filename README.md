@@ -2,6 +2,14 @@
 
 This is a stub implementation of <https://github.com/memcachier/bcrypt>. It has been created for use as a replacement to the bcrypt library for use when performing Veracode SAST. You can see an example usage of this stub here: <https://github.com/antfie/veracode-static-go-stub-bcrypt-example>.
 
+## Using
+
+To use this stub clone this repository and then add the following line to your `go.mod` file and then run `go mod vendor`:
+
+```bash
+replace github.com/memcachier/bcrypt => ./<PATH_TO_THIS_REPOSITORY>
+```
+
 ## Example Script
 
 The below bash script can be used to package a go app using this library, replacing the implementation with the stub for Veracode scanning.
